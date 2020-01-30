@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.aftwork.clinic.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fr_home" />
+
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.aftwork.clinic.ui.pesan.PesanFragment"
+        android:label="Pesan"
+        tools:layout="@layout/fr_pesan" />
+
+    <fragment
+        android:id="@+id/navigation_book"
+        android:name="com.aftwork.clinic.ui.antri.AntriFragment"
+        android:label="Antri"
+        tools:layout="@layout/fr_antri" />
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.aftwork.clinic.ui.akun.AkunFragment"
+        android:label="Akun"
+        tools:layout="@layout/fr_akun" />
+</navigation>
